@@ -4,7 +4,13 @@ import java.util.List;
 
 public class ShapePrinter {
 
-    public String json(double sum){
-        return "{sum: "+sum+"}";
+    private AreaCalculator areaCalculator = new AreaCalculator();
+
+    public ShapePrinter(AreaCalculator areaCalculator) {
+        this.areaCalculator = areaCalculator;
+    }
+
+    public String json(List<Shape> shapes){
+        return "{sum: "+areaCalculator.sum(shapes)+"}";
     }
 }
