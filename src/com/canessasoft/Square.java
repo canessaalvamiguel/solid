@@ -1,6 +1,6 @@
 package com.canessasoft;
 
-public class Square {
+public class Square implements Shape{
 
     private double length;
 
@@ -10,5 +10,10 @@ public class Square {
 
     public double getLength() {
         return length;
+    }
+
+    @Override
+    public double area() {
+        return Math.pow( this.length, 2 );
     }
 }

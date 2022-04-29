@@ -1,6 +1,6 @@
 package com.canessasoft;
 
-public class Rectangle {
+public class Rectangle implements Shape{
     private double length;
     private double width;
 
@@ -15,5 +15,10 @@ public class Rectangle {
 
     public double getWidth() {
         return width;
+    }
+
+    @Override
+    public double area() {
+        return this.length * this.width;
     }
 }
