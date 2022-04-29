@@ -1,6 +1,6 @@
 package com.canessasoft;
 
-public class Cube implements Shape{
+public class Cube implements Shape, ThreeDimensionalShape{
 
     private double edge;
 
