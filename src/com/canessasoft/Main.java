@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        AreaCalculator areaCalculator = new AreaCalculator();
+        IAreaCalculator areaCalculator = new AreaCalculator();
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Rectangle rectangle = new Rectangle(10, 10);

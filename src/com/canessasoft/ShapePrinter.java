@@ -4,9 +4,9 @@ import java.util.List;
 
 public class ShapePrinter {
 
-    private AreaCalculator areaCalculator = new AreaCalculator();
+    private final IAreaCalculator areaCalculator;
 
-    public ShapePrinter(AreaCalculator areaCalculator) {
+    public ShapePrinter(IAreaCalculator areaCalculator) {
         this.areaCalculator = areaCalculator;
     }
 

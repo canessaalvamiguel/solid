@@ -2,8 +2,9 @@ package com.canessasoft;
 
 import java.util.List;
 
-public class AreaCalculator {
+public class AreaCalculator implements IAreaCalculator {
 
+    @Override
     public double sum(List<Shape> shapes){
         double sum = 0;
         for(int i = 0; i < shapes.size(); i++){
