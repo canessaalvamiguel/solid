@@ -8,8 +8,7 @@ public class Main {
         Circle circle = new Circle(10);
         Square square = new Square(10);
         Rectangle rectangle = new Rectangle(10, 10);
-        NoShape noShape = new NoShape();
-        List<Shape> shapes = List.of(circle, square, rectangle, noShape);
+        List<Shape> shapes = List.of(circle, square, rectangle);
         ShapePrinter printer = new ShapePrinter();
         double sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
