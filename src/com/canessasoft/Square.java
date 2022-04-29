@@ -16,4 +16,9 @@ public class Square implements Shape{
     public double area() {
         return Math.pow( this.length, 2 );
     }
+
+    @Override
+    public double volume() {
+        return 0;
+    }
 }

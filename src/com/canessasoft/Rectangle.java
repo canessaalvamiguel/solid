@@ -21,4 +21,9 @@ public class Rectangle implements Shape{
     public double area() {
         return this.length * this.width;
     }
+
+    @Override
+    public double volume() {
+        return 0;
+    }
 }
