@@ -14,6 +14,9 @@ public class AreaCalculator {
             if(shape instanceof Circle){
                 sum += Math.PI + Math.pow( ((Circle) shape).getRadius(), 2);
             }
+            if(shape instanceof Rectangle){
+                sum += ((Rectangle) shape).getLength() * ((Rectangle) shape).getWidth();
+            }
         }
         return sum;
     }
